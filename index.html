@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablero de Tenis</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scoreboard">
+      <div class="player-row">
+        <span class="serve-icon active"><i class="fas fa-circle"></i></span>
+        <span class="player-name">Player Arriba</span>
+        <div class="sets">
+          <span>0</span>
+          <span>0</span>
+          <span>0</span>
+        </div>
+        <div class="game-score">
+          <span>0</span>
+        </div>
+      </div>
+      <div class="player-row">
+        <span class="serve-icon"><i class="fas fa-circle"></i></span>
+        <span class="player-name">Player Abajo</span>
+        <div class="sets">
+          <span>0</span>
+          <span>0</span>
+          <span>0</span>
+        </div>
+        <div class="game-score">
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="card">
+        <h3>Participantes</h3>
+        <div class="participant-names">
+          <div class="participant">
+            <label for="local-name">Local:</label>
+            <input
+              type="text"
+              id="local-name"
+              placeholder="Nombre del jugador local"
+            />
+          </div>
+          <div class="participant">
+            <label for="visitor-name">Visitante:</label>
+            <input
+              type="text"
+              id="visitor-name"
+              placeholder="Nombre del jugador visitante"
+            />
+          </div>
+        </div>
+        <button id="update-names">Actualizar Nombres</button>
+      </div>
+      <div class="controls-grid">
+        <div class="card">
+          <h3 class="card-title">HOME: 0</h3>
+          <div class="button-group">
+            <button>0</button>
+            <button>15</button>
+            <button>30</button>
+            <button>40</button>
+            <button>AD</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">AWAY: 0</h3>
+          <div class="button-group">
+            <button>0</button>
+            <button>15</button>
+            <button>30</button>
+            <button>40</button>
+            <button>AD</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">HOME : [ 0, 0, 0 ]</h3>
+          <div class="set-controls">
+            <div class="button-group">
+              <button>+1</button>
+              <button>-1</button>
+              <button>RESET</button>
+            </div>
+            <select>
+              <option value="1">Set 1</option>
+              <option value="2">Set 2</option>
+              <option value="3">Set 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">AWAY : [ 0, 0, 0 ]</h3>
+          <div class="set-controls">
+            <div class="button-group">
+              <button>+1</button>
+              <button>-1</button>
+              <button>RESET</button>
+            </div>
+            <select>
+              <option value="1">Set 1</option>
+              <option value="2">Set 2</option>
+              <option value="3">Set 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">HOME serve</h3>
+          <div class="button-group">
+            <button>SWITCH</button>
+            <button>HIDE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
