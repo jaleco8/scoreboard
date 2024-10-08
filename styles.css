@@ -9,11 +9,26 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .scoreboard,
+  .controls {
+    flex: 1;
+  }
+}
+
 .scoreboard {
   background-color: #007d6b;
   padding: 20px;
   border-radius: 10px;
-  width: 600px;
+  width: 500px;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
